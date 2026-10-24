@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Blobby Bites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 aria-label="Blobby Bites"><span>Blobby</span> <span>Bites</span></h1>
+    <div class="hud">
+        <div class="pill" id="score">0</div>
+        <div class="pill" id="combo">x1</div>
+        <div class="pill" id="lives" aria-label="Lives">❤️❤️❤️</div>
+    </div>
+    <div class="stage">
+        <canvas id="c" width="480" height="640"></canvas>
+        <div class="overlay" id="menu">
+            <h2 id="mtitle">Feed the blob!</h2>
+            <p id="mtext">Slide to move. Eat fruit, dodge bombs, and keep your combo alive.</p>
+            <div class="legend"><span>🍓 +10</span><span>💣 ouch</span><span>⭐ shield</span><span>💖 life</span></div>
+            <button id="play">Play</button>
+            <div class="tip">Mouse, finger, or ← → keys</div>
+            <div class="tip" id="best"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
